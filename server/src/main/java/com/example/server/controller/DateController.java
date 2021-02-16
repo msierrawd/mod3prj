@@ -1,12 +1,16 @@
 package com.example.server.controller;
 
 import com.example.server.model.Date;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/dates")
 public class DateController {
+    @Autowired
+    DateService dateService; 
+
     @GetMapping
     public Iterable<Date> getDates(){
         return dateService.getDates()
