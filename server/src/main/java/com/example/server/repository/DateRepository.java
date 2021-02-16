@@ -1,5 +1,8 @@
 package com.example.server.repository;
 
-public interface DateRepository {
-    
+import com.example.server.model.Date;
+import org.springframework.data.repository.CrudRepository;
+
+public interface DateRepository extends CrudRepository<Date, Long> {
+
 }
