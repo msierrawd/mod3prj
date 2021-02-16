@@ -14,6 +14,14 @@ public class Date {
     public Date() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Integer getDay() {
         return day;
     }
