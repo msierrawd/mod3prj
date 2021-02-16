@@ -10,8 +10,13 @@ public class Date {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private Integer day;
+
+    @Column
     private Integer month;
+
+    @Column
     private Integer year;
 
     public Date() {
