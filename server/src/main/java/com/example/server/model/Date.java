@@ -1,6 +1,12 @@
 package com.example.server.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Date {
+    private Long id;
     private Integer day;
     private Integer month;
     private Integer year;
