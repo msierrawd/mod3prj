@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/dates")
 public class DateController {
     @Autowired
-    DateService dateService; 
+    DateService dateService;
 
     @GetMapping
     public Iterable<Date> getDates(){
