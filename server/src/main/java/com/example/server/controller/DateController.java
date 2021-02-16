@@ -1,6 +1,7 @@
 package com.example.server.controller;
 
 import com.example.server.model.Date;
+import com.example.server.service.DateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,12 +14,12 @@ public class DateController {
 
     @GetMapping
     public Iterable<Date> getDates(){
-        return dateService.getDates()
+        return dateService.getDates();
     }
 
     @PostMapping
     public Date createDate(@RequestBody Date date){
-        return dateService.createDate(date)
+        return dateService.createDate(date);
     }
 
     @PatchMapping

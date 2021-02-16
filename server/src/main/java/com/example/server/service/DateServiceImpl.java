@@ -11,21 +11,22 @@ public class DateServiceImpl implements DateService {
     DateRepository dateRepository;
     @Override
     public Iterable<Date> getDates() {
-        return null;
+        return dateRepository.findAll();
     }
 
     @Override
     public Date createDate(Date date) {
-        return null;
+        return dateRepository.save(date);
     }
 
     @Override
     public Date updateDate(Date date) {
-        return null;
+        return dateRepository.save(date);
     }
 
     @Override
     public HttpStatus deleteDate(Long id) {
-        return null;
+        dateRepository.deleteById(id);
+        return HttpStatus.OK;
     }
 }
