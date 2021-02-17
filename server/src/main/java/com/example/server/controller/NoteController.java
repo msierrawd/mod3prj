@@ -21,4 +21,9 @@ public class NoteController {
         return noteService.createNote(note);
     }
 
+    @PatchMapping
+    public Note updateNote(@RequestBody Note note){
+        return noteService.updateNote(note);
+    }
+
 }
