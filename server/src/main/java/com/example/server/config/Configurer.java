@@ -5,6 +5,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+//This helps with the Cors issue that shows up in console
 @Configuration
 @EnableWebMvc
 public class Configurer implements WebMvcConfigurer {
