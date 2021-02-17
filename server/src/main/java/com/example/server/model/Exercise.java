@@ -9,7 +9,7 @@ public class Exercise {
     private String lborkg;
 
 
-
-
-
+    public Exercise() {
+    }
+    
 }
