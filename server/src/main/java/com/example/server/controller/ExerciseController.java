@@ -21,5 +21,9 @@ public class ExerciseController {
         return exerciseService.createExercise(exercise);
     }
 
-    
+    @PatchMapping
+    public Exercise updateExercise(@RequestBody Exercise exercise){
+        return exerciseService.updateExercise(exercise);
+    }
+
 }
