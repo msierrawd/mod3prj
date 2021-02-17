@@ -11,6 +11,11 @@ public class Note {
     private Long id;
 
     @Column
-    private String note; 
+    private String note;
+
+    
+    public Note() {
+    }
+
 
 }
