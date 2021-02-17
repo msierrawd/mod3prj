@@ -1,12 +1,15 @@
 package com.example.server.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "exercise")
 public class Exercise {
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String exercise;
     private Integer set;
     private Integer reps;
