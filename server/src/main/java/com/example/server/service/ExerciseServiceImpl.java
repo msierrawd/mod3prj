@@ -4,7 +4,9 @@ import com.example.server.model.Exercise;
 import com.example.server.repository.ExerciseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ExerciseServiceImpl implements ExerciseService {
 
     @Autowired
