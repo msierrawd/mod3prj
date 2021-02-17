@@ -1,9 +1,12 @@
 package com.example.server.service;
 
 import com.example.server.model.Exercise;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 
 public class ExerciseServiceImpl implements ExerciseService {
+
+
     @Override
     public Iterable<Exercise> getExercises() {
         return null;
