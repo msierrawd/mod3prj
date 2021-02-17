@@ -1,5 +1,10 @@
 package com.example.server.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "exercise")
 public class Exercise {
     private Long id;
     private String exercise;
