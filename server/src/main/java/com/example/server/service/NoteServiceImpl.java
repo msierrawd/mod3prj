@@ -13,21 +13,22 @@ public class NoteServiceImpl implements NoteService {
 
     @Override
     public Iterable<Note> getNotes() {
-        return null;
+        return noteRepository.findAll();
     }
 
     @Override
     public Note createNote(Note note) {
-        return null;
+        return noteRepository.save(note);
     }
 
     @Override
     public Note updateNote(Note note) {
-        return null;
+        return noteRepository.save(note);
     }
 
     @Override
     public HttpStatus deleteNote(Long id) {
-        return null;
+        noteRepository.deleteById(id);
+        return HttpStatus.OK;
     }
 }
