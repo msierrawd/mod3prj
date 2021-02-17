@@ -19,6 +19,7 @@ public class Date {
     @Column
     private Integer year;
 
+    
     public Date() {
     }
 

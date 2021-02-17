@@ -10,10 +10,19 @@ public class Exercise {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private String exercise;
+
+    @Column
     private Integer set;
+
+    @Column
     private Integer reps;
+
+    @Column
     private Integer weight;
+
+    @Column
     private String lborkg;
 
 
