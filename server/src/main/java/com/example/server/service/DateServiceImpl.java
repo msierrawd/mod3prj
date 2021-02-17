@@ -11,6 +11,7 @@ public class DateServiceImpl implements DateService {
 
     @Autowired
     DateRepository dateRepository;
+
     @Override
     public Iterable<Date> getDates() {
         return dateRepository.findAll();
