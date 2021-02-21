@@ -37,11 +37,26 @@ function Dates(){
         }
     }
 
+    const [edate, setEdate] = useState(null);
+
+    async function editDate(){
+        try{
+            const res = await axios.patch('http://localhost:8080/dates')
+        }catch(e){
+            console.error(e, e.message);
+        }
+    }
+
+    function chooseDate(date){
+        console.log(date)
+        setEdate(date);
+    }
         return(
             <div>
                 { dates && dates.map(date => (
                     <div className= "date" key={ date.id }> 
                         <h2> {date.day}/{date.month}/{date.year}</h2>
+                        <button onClick={ () => chooseDate(date) }> Edit Date</button>
                     </div>
                 ))}
 
