@@ -19,7 +19,11 @@ async function getDates(){
 
     return(
         <div>
-            <h1>Hello, this is a test!</h1>
+            { dates && dates.map(date => (
+                <div className= "date" key={ date.id }> 
+                    <h2> {date.day}/{date.month}/{date.year}</h2>
+                </div>
+            ))}
         </div>
     )
 }
