@@ -80,13 +80,14 @@ function Dates(){
                         onSubmit = { (e) => handleSubmit(e) }
                     >
                         <label>
-                            Day: 
-                            <input type="text" name="day"/>
-                        </label>
-                        <label>
                             Month: 
                             <input type="text" name="month"/>
                         </label>
+                        <label>
+                            Day: 
+                            <input type="text" name="day"/>
+                        </label>
+
                         <label>
                             Year: 
                             <input type="text" name="year"/>
@@ -99,13 +100,14 @@ function Dates(){
                         onSubmit= { (e) => handleEditSubmit(e) }
                     >
                         <label>
-                            Day: 
-                            <input type="text" name="day" defaultValue={ selectedDate.day }/>
-                        </label>
-                        <label>
                             Month: 
                             <input type="text" name="month" defaultValue={ selectedDate.month }/>
                         </label>
+                        <label>
+                            Day: 
+                            <input type="text" name="day" defaultValue={ selectedDate.day }/>
+                        </label>
+
                         <label>
                             Year: 
                             <input type="text" name="year" defaultValue={ selectedDate.year }/>
@@ -120,7 +122,7 @@ function Dates(){
 function Date({ date, selectDate, deleteDate }){
     return(
     <div className= "date" key={ date.id }> 
-        <h2> {date.day}/{date.month}/{date.year}</h2>
+        <h2> {date.month}/{date.day}/{date.year}</h2>
         <button onClick={ () => selectDate(date) }> Edit Date </button>
         <button onClick={ () => deleteDate(date.id)}> Delete Date </button>
     </div>

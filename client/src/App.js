@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Dates from './components/Dates';
+import Blocks from './components/Blocks'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Dates/>
+        <Blocks/>
       </header>
     </div>
   );

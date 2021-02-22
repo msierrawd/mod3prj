@@ -1,13 +1,16 @@
-// This component will tie together Dates, Exercises, and Notes
-import React, { useEffect, useState } from 'react';
+import Dates from './Dates';
+import Exercises from './Exercises';
+import Notes from './Notes';
 
+// ADD CSS TO MAKE THINGS LOOK PRETTIER 
 function Blocks(){
     return(
-        // Rough wireframe of what Blocks will return
         <div> 
-            {/* <Dates/> */}
-            {/* <Exercises/> */}
-            {/* <Notes/> */}
+            <Dates/>
+            <Exercises/>
+            <Notes/>
         </div>
     )
 }
+
+export default Blocks;

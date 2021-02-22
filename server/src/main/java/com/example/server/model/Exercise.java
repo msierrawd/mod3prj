@@ -14,7 +14,7 @@ public class Exercise {
     private String exercise;
 
     @Column
-    private Integer set;
+    private Integer sets;
 
     @Column
     private Integer reps;
@@ -45,12 +45,12 @@ public class Exercise {
         this.exercise = exercise;
     }
 
-    public Integer getSet() {
-        return set;
+    public Integer getSets() {
+        return sets;
     }
 
-    public void setSet(Integer set) {
-        this.set = set;
+    public void setSets(Integer sets) {
+        this.sets = sets;
     }
 
     public Integer getReps() {
