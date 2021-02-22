@@ -60,9 +60,18 @@ function Dates(){
         }
     }
 
+    async function deleteDate(dateId){
+        try{
+            const res = await axios.delete('http://localhost:8080/dates/' + dateId)
+            getDates();
+        }catch(e){
+            console.error(e, e.message);
+        }
+    }
+
         return(
             <div>
-                { dates && dates.map(date => <Date date ={ date } selectDate={ selectDate }/>)}
+                { dates && dates.map(date => <Date date ={ date } selectDate={ selectDate } deleteDate={ deleteDate }/>)}
 
                 <div>
                     <h2>Create Date</h2>
@@ -108,11 +117,12 @@ function Dates(){
         )
 }
 
-function Date( { date, selectDate } ){
+function Date({ date, selectDate, deleteDate }){
     return(
     <div className= "date" key={ date.id }> 
         <h2> {date.day}/{date.month}/{date.year}</h2>
         <button onClick={ () => selectDate(date) }> Edit Date </button>
+        <button onClick={ () => deleteDate(date.id)}> Delete Date </button>
     </div>
     )
 }
