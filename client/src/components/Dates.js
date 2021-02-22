@@ -62,12 +62,7 @@ function Dates(){
 
         return(
             <div>
-                { dates && dates.map(date => (
-                    <div className= "date" key={ date.id }> 
-                        <h2> {date.day}/{date.month}/{date.year}</h2>
-                        <button onClick={ () => selectDate(date) }> Edit Date </button>
-                    </div>
-                ))}
+                { dates && dates.map(date => <Date date ={ date } selectDate={ selectDate }/>)}
 
                 <div>
                     <h2>Create Date</h2>
@@ -111,6 +106,15 @@ function Dates(){
                 </div>
             </div>
         )
+}
+
+function Date( { date, selectDate } ){
+    return(
+    <div className= "date" key={ date.id }> 
+        <h2> {date.day}/{date.month}/{date.year}</h2>
+        <button onClick={ () => selectDate(date) }> Edit Date </button>
+    </div>
+    )
 }
 
 export default Dates; 
