@@ -39,26 +39,33 @@ function Dates(){
         }
     }
 
-    const [edate, setEdate] = useState(null);
+    const [selectedDate, setSelectedDate] = useState(null);
 
-    async function editDate(){
+    function selectDate(date){
+        setSelectedDate(date);
+    }
+
+    function handleEditChange(e){
+        const { name, value } = e.target;
+        setSelectedDate({ ...selectedDate, [name]: value });
+    }
+
+    async function handleEditSubmit(e){
+        e.preventDefault();
         try{
-            const res = await axios.patch('http://localhost:8080/dates')
+            const res = await axios.patch('http://localhost:8080/dates', selectedDate)
+            getDates();
         }catch(e){
             console.error(e, e.message);
         }
     }
 
-    function chooseDate(date){
-        console.log(date)
-        setEdate(date);
-    }
         return(
             <div>
                 { dates && dates.map(date => (
                     <div className= "date" key={ date.id }> 
                         <h2> {date.day}/{date.month}/{date.year}</h2>
-                        <button onClick={ () => chooseDate(date) }> Edit Date</button>
+                        <button onClick={ () => selectDate(date) }> Edit Date </button>
                     </div>
                 ))}
 
@@ -66,7 +73,8 @@ function Dates(){
                     <h2>Create Date</h2>
                     <form
                         onChange= { (e) => handleChange(e) }
-                        onSubmit = { (e) => handleSubmit(e) }>
+                        onSubmit = { (e) => handleSubmit(e) }
+                    >
                         <label>
                             Day: 
                             <input type="text" name="day"/>
@@ -81,6 +89,25 @@ function Dates(){
                         </label>
                         <input type="submit" value="Create Date"/>
                     </form>
+                
+                    { selectedDate && <form
+                        onChange= { (e) => handleEditChange(e) }
+                        onSubmit= { (e) => handleEditSubmit(e) }
+                    >
+                        <label>
+                            Day: 
+                            <input type="text" name="day" defaultValue={ selectedDate.day }/>
+                        </label>
+                        <label>
+                            Month: 
+                            <input type="text" name="month" defaultValue={ selectedDate.month }/>
+                        </label>
+                        <label>
+                            Year: 
+                            <input type="text" name="year" defaultValue={ selectedDate.year }/>
+                        </label>
+                        <input type="submit" value="Edit Date"/>
+                    </form>}
                 </div>
             </div>
         )
