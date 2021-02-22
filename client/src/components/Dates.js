@@ -33,6 +33,7 @@ function Dates(){
     async function createDate(){
         try{
             const res = await axios.post('http://localhost:8080/dates', form);
+            setDates([...dates, res.data]);
         }catch(e){
             console.error(e, e.message);
         }
