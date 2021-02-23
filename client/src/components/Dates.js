@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 function Dates(){
 
@@ -123,8 +124,8 @@ function Date({ date, selectDate, deleteDate }){
     return(
     <div className= "date" key={ date.id }> 
         <h2> {date.month}/{date.day}/{date.year}</h2>
-        <button onClick={ () => selectDate(date) }> Edit Date </button>
-        <button onClick={ () => deleteDate(date.id)}> Delete Date </button>
+        <Button color="danger" onClick={ () => selectDate(date) }> Edit Date </Button>{' '}
+        <Button onClick={ () => deleteDate(date.id)}> Delete Date </Button>
     </div>
     )
 }
