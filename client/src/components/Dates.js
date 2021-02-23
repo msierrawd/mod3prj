@@ -124,8 +124,8 @@ function Date({ date, selectDate, deleteDate }){
     return(
     <div className= "date" key={ date.id }> 
         <h2> {date.month}/{date.day}/{date.year}</h2>
-        <Button color="danger" onClick={ () => selectDate(date) }> Edit Date </Button>{' '}
-        <Button onClick={ () => deleteDate(date.id)}> Delete Date </Button>
+        <Button color="warning" onClick={ () => selectDate(date) }> Edit Date </Button>{' '}
+        <Button color="danger" onClick={ () => deleteDate(date.id)}> Delete Date </Button>{' '}
     </div>
     )
 }

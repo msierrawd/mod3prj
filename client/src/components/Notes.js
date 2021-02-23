@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 function Notes(){
 
@@ -105,8 +106,8 @@ function Note({ note, selectNote, deleteNote }){
     return(
     <div className= "note" key={ note.id }> 
         <h2> {note.note} </h2>
-        <button onClick={ () => selectNote(note) }> Edit Note </button>
-        <button onClick={ () => deleteNote(note.id)}> Delete Note </button>
+        <Button color="warning" onClick={ () => selectNote(note) }> Edit Note </Button>{' '}
+        <Button color="danger" onClick={ () => deleteNote(note.id)}> Delete Note </Button>{' '}
     </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 function Exercises(){
 
@@ -137,8 +138,8 @@ function Exercise({ exercise, selectExercise, deleteExercise }){
     return(
     <div className= "exercise" key={exercise.id}> 
         <h2> {exercise.exercise} {exercise.sets} x {exercise.reps} {exercise.weight} {exercise.lborkg}</h2>
-        <button onClick={ () => selectExercise(exercise) }> Edit Exercise </button>
-        <button onClick={ () => deleteExercise(exercise.id)}> Delete Exercise </button>
+        <Button color="warning" onClick={ () => selectExercise(exercise) }> Edit Exercise </Button>{' '}
+        <Button color="danger" onClick={ () => deleteExercise(exercise.id)}> Delete Exercise </Button>{' '}
     </div>
     )
 }
