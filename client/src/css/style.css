@@ -1,0 +1,5 @@
+.notesContainer {
+	height: 900px;
+	width: auto;
+	overflow-y: scroll;
+}

@@ -22,7 +22,7 @@ function TopNavBar(){
         <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
             <NavItem>
-                <NavLink href="https://github.com/msierrawd/mod3prj">GitHub</NavLink>
+                <NavLink target="_blank" href="https://github.com/msierrawd/mod3prj">GitHub</NavLink>
             </NavItem>
             </Nav>
             <NavbarText> Have a good workout :)</NavbarText>
