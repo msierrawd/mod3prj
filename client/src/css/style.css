@@ -3,3 +3,11 @@
 	width: auto;
 	overflow-y: scroll;
 }
+
+.inputSubmit {
+	margin: 5px;
+}
+
+.inputBox {
+	margin: 5px;
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button } from 'reactstrap';
+import '../css/style.css'
 
 function Dates(){
 
@@ -82,18 +83,18 @@ function Dates(){
                     >
                         <label>
                             Month: 
-                            <input type="text" name="month"/>
+                            <input className="inputBox" type="text" name="month"/>
                         </label>
                         <label>
                             Day: 
-                            <input type="text" name="day"/>
+                            <input className="inputBox" type="text" name="day"/>
                         </label>
 
                         <label>
                             Year: 
-                            <input type="text" name="year"/>
+                            <input className="inputBox" type="text" name="year"/>
                         </label>
-                        <input type="submit" value="Create Date"/>
+                        <input className="inputSubmit" type="submit" value="Create Date"/>
                     </form>
                 
                     { selectedDate && <form
@@ -102,18 +103,18 @@ function Dates(){
                     >
                         <label>
                             Month: 
-                            <input type="text" name="month" defaultValue={ selectedDate.month }/>
+                            <input className="inputBox" type="text" name="month" defaultValue={ selectedDate.month }/>
                         </label>
                         <label>
                             Day: 
-                            <input type="text" name="day" defaultValue={ selectedDate.day }/>
+                            <input className="inputBox" type="text" name="day" defaultValue={ selectedDate.day }/>
                         </label>
 
                         <label>
                             Year: 
-                            <input type="text" name="year" defaultValue={ selectedDate.year }/>
+                            <input className="inputBox" type="text" name="year" defaultValue={ selectedDate.year }/>
                         </label>
-                        <input type="submit" value="Edit Date"/>
+                        <input className="inputSubmit" type="submit" value="Edit Date"/>
                     </form>}
                 </div>
             </div>
