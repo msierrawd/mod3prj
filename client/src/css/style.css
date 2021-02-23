@@ -11,3 +11,15 @@
 .inputBox {
 	margin: 5px;
 }
+
+.createDate {
+	float: right;
+}
+
+.createExercise {
+	float: right;
+}
+
+.createNote {
+	width: 370px;
+}

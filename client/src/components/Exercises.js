@@ -75,7 +75,7 @@ function Exercises(){
             <div>
                 { exercises && exercises.map(exercise => <Exercise exercise ={ exercise } selectExercise={ selectExercise } deleteExercise={ deleteExercise }/>)}
 
-                <div>
+                <div className="createExercise">
                     <h2>Create Exercise</h2>
                     <form
                         onChange= { (e) => handleChange(e) }

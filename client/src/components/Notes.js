@@ -74,7 +74,7 @@ function Notes(){
             <div>
                 { notes && notes.map(note => <Note note ={ note } selectNote={ selectNote } deleteNote={ deleteNote }/>)}
 
-                <div>
+                <div className="createNote">
                     <h2>Create Note</h2>
                     <form
                         onChange= { (e) => handleChange(e) }

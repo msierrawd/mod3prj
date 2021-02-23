@@ -75,7 +75,7 @@ function Dates(){
             <div>
                 { dates && dates.map(date => <Date date ={ date } selectDate={ selectDate } deleteDate={ deleteDate }/>)}
 
-                <div>
+                <div className="createDate">
                     <h2>Create Date</h2>
                     <form
                         onChange= { (e) => handleChange(e) }
