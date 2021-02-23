@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button } from 'reactstrap';
+import '../css/style.css'
 
 function Exercises(){
 
@@ -82,25 +83,25 @@ function Exercises(){
                     >
                         <label>
                             Exercise Name: 
-                            <input type="text" name="exercise"/>
+                            <input className="inputBox" type="text" name="exercise"/>
                         </label>
                         <label>
                             Sets: 
-                            <input type="text" name="sets"/>
+                            <input className="inputBox" type="text" name="sets"/>
                         </label>
                         <label>
                             Reps: 
-                            <input type="text" name="reps"/>
+                            <input className="inputBox" type="text" name="reps"/>
                         </label>
                         <label>
                             Weight: 
-                            <input type="text" name="weight"/>
+                            <input className="inputBox" type="text" name="weight"/>
                         </label>
                         <label>
                             LB or KG: 
-                            <input type="text" name="lborkg"/>
+                            <input className="inputBox" type="text" name="lborkg"/>
                         </label>
-                        <input type="submit" value="Create Exercise"/>
+                        <input className="inputSubmit" type="submit" value="Create Exercise"/>
                     </form>
                 
                     { selectedExercise && <form
@@ -109,25 +110,25 @@ function Exercises(){
                     >
                         <label>
                             Exercise Name: 
-                            <input type="text" name="exercise" defaultValue={ selectedExercise.exercise }/>
+                            <input className="inputBox" type="text" name="exercise" defaultValue={ selectedExercise.exercise }/>
                         </label>
                         <label>
                             Sets: 
-                            <input type="text" name="sets" defaultValue={ selectedExercise.sets }/>
+                            <input className="inputBox" type="text" name="sets" defaultValue={ selectedExercise.sets }/>
                         </label>
                         <label>
                             Reps: 
-                            <input type="text" name="reps" defaultValue={ selectedExercise.reps }/>
+                            <input className="inputBox" type="text" name="reps" defaultValue={ selectedExercise.reps }/>
                         </label>
                         <label>
                             Weight: 
-                            <input type="text" name="weight" defaultValue={ selectedExercise.weight }/>
+                            <input className="inputBox" type="text" name="weight" defaultValue={ selectedExercise.weight }/>
                         </label>
                         <label>
                             LB or KG: 
-                            <input type="text" name="lborkg" defaultValue={ selectedExercise.lborkg }/>
+                            <input className="inputBox" type="text" name="lborkg" defaultValue={ selectedExercise.lborkg }/>
                         </label>
-                        <input type="submit" value="Edit Exercise"/>
+                        <input className="inputSubmit" type="submit" value="Edit Exercise"/>
                     </form>}
                 </div>
             </div>

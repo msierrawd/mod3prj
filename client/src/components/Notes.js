@@ -82,9 +82,9 @@ function Notes(){
                     >
                         <label>
                             Note: 
-                            <input type="text" name="note"/>
+                            <input className="inputBox" type="text" name="note"/>
                         </label>
-                        <input type="submit" value="Create Note"/>
+                        <input className="inputSubmit" type="submit" value="Create Note"/>
                     </form>
                 
                     { selectedNote && <form
@@ -93,9 +93,9 @@ function Notes(){
                     >
                         <label>
                             Note: 
-                            <input type="text" name="note" defaultValue={ selectedNote.note }/>
+                            <input className="inputBox" type="text" name="note" defaultValue={ selectedNote.note }/>
                         </label>
-                        <input type="submit" value="Edit Note"/>
+                        <input className="inputSubmit" type="submit" value="Edit Note"/>
                     </form>}
                 </div>
             </div>
