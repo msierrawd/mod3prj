@@ -25,7 +25,7 @@ function TopNavBar(){
                 <NavLink target="_blank" href="https://github.com/msierrawd/mod3prj">GitHub</NavLink>
             </NavItem>
             </Nav>
-            <NavbarText> Have a good workout :)</NavbarText>
+            <NavbarText> *Still working on CSS*</NavbarText>
         </Collapse>
         </Navbar>
     </div>
