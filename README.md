@@ -18,12 +18,12 @@ Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 "year": 22 <br/>
 } <br/>
 Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
-{
-"id": 1, <--- Add id of what you want to change
-"day": 55,
-"month": 2,
-"year": 22
-}
+{<br/>
+"id": 1, <--- Add id of what you want to change<br/>
+"day": 55,<br/>
+"month": 2,<br/>
+"year": 22<br/>
+}<br/>
 Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/x_ <--- (Change with ID) <br/>
 
 _Exercises_ <br/>
