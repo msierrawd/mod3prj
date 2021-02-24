@@ -12,7 +12,18 @@ Deployed Back End (Heroku):
 _Dates_ <br/>
 Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
+{
+"day": 5,
+"month": 2,
+"year": 22
+}
 Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
+{
+"id": 1, <--- Add id of what you want to change
+"day": 55,
+"month": 2,
+"year": 22
+}
 Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/x_ <--- (Change with ID) <br/>
 
 _Exercises_ <br/>
