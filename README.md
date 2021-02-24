@@ -10,10 +10,10 @@ Deployed Front End (Surge): _http://clear-trouble.surge.sh/_
 Back End (Heroku):
 
 _GET_
-Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_
-Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_
-Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_
-Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/1_ <--- (ID)
+Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
+Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
+Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
+Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/1_ <--- (ID) <br/>
 
 # Wireframe images
 
