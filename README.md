@@ -9,7 +9,7 @@ Deployed Front End (Surge): _http://clear-trouble.surge.sh/_
 
 Back End (Heroku):
 
-_GET_
+_GET_ <br/>
 Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
