@@ -38,7 +38,7 @@ Exercises POST: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 }<br/>
 Exercises PATCH: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 {<br/>
-"id": 1,<br/>
+"id": 1, <--- Add id of what you want to change<br/>
 "exercise": "Low Bar Squat",<br/>
 "sets": 5,<br/>
 "reps": 3,<br/>
@@ -50,7 +50,14 @@ Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/x_ <---
 _Notes_ <br/>
 Notes GET: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
 Notes POST: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
+{<br/>
+"note": "Hello, I am a note"<br/>
+}<br/>
 Notes PATCH: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
+{<br/>
+"id": 1, <--- Add id of what you want to change<br/>
+"note": "Hello, I am also a note that's edited with patch"<br/>
+}<br/>
 Notes DELETE: _https://cryptic-thicket-90640.herokuapp.com/notes/x_ <--- (Change with ID) <br/>
 
 # Wireframe images
