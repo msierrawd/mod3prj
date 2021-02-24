@@ -29,7 +29,22 @@ Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/x_ <--- (Change
 _Exercises_ <br/>
 Exercises GET: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 Exercises POST: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
+{<br/>
+"exercise": "Conventional Deadlift", <br/>
+"sets": 1, <br/>
+"reps": 5, <br/>
+"weight": 235, <br/>
+"lborkg": "lb" <br/>
+}<br/>
 Exercises PATCH: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
+{<br/>
+"id": 1,<br/>
+"exercise": "Low Bar Squat",<br/>
+"sets": 5,<br/>
+"reps": 3,<br/>
+"weight": 190,<br/>
+"lborkg": "lb"<br/>
+}<br/>
 Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/x_ <--- (Change with ID) <br/>
 
 _Notes_ <br/>
