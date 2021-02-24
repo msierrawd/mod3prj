@@ -9,7 +9,7 @@ function Exercises(){
 
     async function getExercises(){
         try{
-            const res = await axios.get('http://localhost:8080/exercises');
+            const res = await axios.get('https://cryptic-thicket-90640.herokuapp.com/exercises/');
             setExercises(res.data);
         }catch(e){
             console.error(e , e.message);
@@ -34,7 +34,7 @@ function Exercises(){
 
     async function createExercise(){
         try{
-            const res = await axios.post('http://localhost:8080/exercises', form);
+            const res = await axios.post('https://cryptic-thicket-90640.herokuapp.com/exercises/', form);
             setExercises([...exercises, res.data]);
         }catch(e){
             console.error(e, e.message);
@@ -55,7 +55,7 @@ function Exercises(){
     async function handleEditSubmit(e){
         e.preventDefault();
         try{
-            const res = await axios.patch('http://localhost:8080/exercises', selectedExercise)
+            const res = await axios.patch('https://cryptic-thicket-90640.herokuapp.com/exercises/', selectedExercise)
             getExercises();
         }catch(e){
             console.error(e, e.message);
@@ -64,7 +64,7 @@ function Exercises(){
 
     async function deleteExercise(exerciseId){
         try{
-            const res = await axios.delete('http://localhost:8080/exercises/' + exerciseId)
+            const res = await axios.delete('https://cryptic-thicket-90640.herokuapp.com/exercises/' + exerciseId)
             getExercises();
         }catch(e){
             console.error(e, e.message);

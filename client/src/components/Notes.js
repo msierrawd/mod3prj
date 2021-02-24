@@ -8,7 +8,7 @@ function Notes(){
 
     async function getNotes(){
         try{
-            const res = await axios.get('http://localhost:8080/notes');
+            const res = await axios.get('https://cryptic-thicket-90640.herokuapp.com/notes/');
             setNotes(res.data);
         }catch(e){
             console.error(e , e.message);
@@ -33,7 +33,7 @@ function Notes(){
 
     async function createNote(){
         try{
-            const res = await axios.post('http://localhost:8080/notes', form);
+            const res = await axios.post('https://cryptic-thicket-90640.herokuapp.com/notes/', form);
             setNotes([...notes, res.data]);
         }catch(e){
             console.error(e, e.message);
@@ -54,7 +54,7 @@ function Notes(){
     async function handleEditSubmit(e){
         e.preventDefault();
         try{
-            const res = await axios.patch('http://localhost:8080/notes', selectedNote)
+            const res = await axios.patch('https://cryptic-thicket-90640.herokuapp.com/notes/', selectedNote)
             getNotes();
         }catch(e){
             console.error(e, e.message);
@@ -63,7 +63,7 @@ function Notes(){
 
     async function deleteNote(noteId){
         try{
-            const res = await axios.delete('http://localhost:8080/notes/' + noteId)
+            const res = await axios.delete('https://cryptic-thicket-90640.herokuapp.com/notes/' + noteId)
             getNotes();
         }catch(e){
             console.error(e, e.message);

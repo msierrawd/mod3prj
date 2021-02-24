@@ -9,7 +9,7 @@ function Dates(){
 
     async function getDates(){
         try{
-            const res = await axios.get('http://localhost:8080/dates');
+            const res = await axios.get('https://cryptic-thicket-90640.herokuapp.com/dates/');
             setDates(res.data);
         }catch(e){
             console.error(e , e.message);
@@ -34,7 +34,7 @@ function Dates(){
 
     async function createDate(){
         try{
-            const res = await axios.post('http://localhost:8080/dates', form);
+            const res = await axios.post('https://cryptic-thicket-90640.herokuapp.com/dates/', form);
             setDates([...dates, res.data]);
         }catch(e){
             console.error(e, e.message);
@@ -55,7 +55,7 @@ function Dates(){
     async function handleEditSubmit(e){
         e.preventDefault();
         try{
-            const res = await axios.patch('http://localhost:8080/dates', selectedDate)
+            const res = await axios.patch('https://cryptic-thicket-90640.herokuapp.com/dates/', selectedDate)
             getDates();
         }catch(e){
             console.error(e, e.message);
@@ -64,7 +64,7 @@ function Dates(){
 
     async function deleteDate(dateId){
         try{
-            const res = await axios.delete('http://localhost:8080/dates/' + dateId)
+            const res = await axios.delete('https://cryptic-thicket-90640.herokuapp.com/dates/' + dateId)
             getDates();
         }catch(e){
             console.error(e, e.message);
