@@ -5,7 +5,7 @@ This app will give you a notebook specifically for tracking your exercies.
 
 # Link to deployed app
 
-//Add later
+_http://clear-trouble.surge.sh/_
 
 # Wireframe images
 
