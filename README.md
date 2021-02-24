@@ -7,7 +7,7 @@ This app will give you a notebook specifically for tracking your exercies.
 
 Deployed Front End (Surge): _http://clear-trouble.surge.sh/_
 
-Back End (Heroku):
+Deployed Back End (Heroku):
 
 _Dates_ <br/>
 Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
