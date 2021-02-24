@@ -9,11 +9,17 @@ Deployed Front End (Surge): _http://clear-trouble.surge.sh/_
 
 Back End (Heroku):
 
-_GET_ <br/>
+_Dates_ <br/>
 Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/1_ <--- (ID) <br/>
+
+_Exercises_ <br/>
+Exercises GET: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
+Exercises POST: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
+Exercises PATCH: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
+Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/1_ <--- (ID) <br/>
 
 # Wireframe images
 
