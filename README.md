@@ -21,6 +21,12 @@ Exercises POST: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 Exercises PATCH: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/1_ <--- (ID) <br/>
 
+_Notes_ <br/>
+Notes GET: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
+Notes POST: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
+Notes PATCH: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
+Notes DELETE: _https://cryptic-thicket-90640.herokuapp.com/notes/1_ <--- (ID) <br/>
+
 # Wireframe images
 
 _Sorry for these scuffed wireframes, I'm not an artist_
