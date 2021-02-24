@@ -13,19 +13,19 @@ _Dates_ <br/>
 Dates GET: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates POST: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
 Dates PATCH: _https://cryptic-thicket-90640.herokuapp.com/dates/_ <br/>
-Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/1_ <--- (ID) <br/>
+Dates DELETE: _https://cryptic-thicket-90640.herokuapp.com/dates/x_ <--- (Change with ID) <br/>
 
 _Exercises_ <br/>
 Exercises GET: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 Exercises POST: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
 Exercises PATCH: _https://cryptic-thicket-90640.herokuapp.com/exercises/_ <br/>
-Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/1_ <--- (ID) <br/>
+Exercises DELETE: _https://cryptic-thicket-90640.herokuapp.com/exercises/x_ <--- (Change with ID) <br/>
 
 _Notes_ <br/>
 Notes GET: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
 Notes POST: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
 Notes PATCH: _https://cryptic-thicket-90640.herokuapp.com/notes/_ <br/>
-Notes DELETE: _https://cryptic-thicket-90640.herokuapp.com/notes/1_ <--- (ID) <br/>
+Notes DELETE: _https://cryptic-thicket-90640.herokuapp.com/notes/x_ <--- (Change with ID) <br/>
 
 # Wireframe images
 
